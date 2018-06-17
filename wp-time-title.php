@@ -10,10 +10,11 @@ Author URI: https://matt.thiessen.us/
 
 
 
+
 function tt_time_title( $data, $postarr ) {
 	if($data['post_type'] == 'post') {
 		if( empty( $data['post_title'] ) ) {
-			$data['post_title'] = date('g:iA F j, Y'); // 7:49PM June 6, 2018
+			$data['post_title'] = current_time( 'g:iA F j, Y' ); // 7:49PM June 6, 2018
 		}
 	}
 		
